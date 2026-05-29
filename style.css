@@ -31,3 +31,7 @@ button {
 li {
   margin-top: 10px;
 }
+.dark {
+  background: black;
+  color: white;
+}
