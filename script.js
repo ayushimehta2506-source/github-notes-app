@@ -8,7 +8,12 @@ function addNote() {
 
   const li = document.createElement("li");
 
-  li.textContent = input.value;
+  li.innerHTML = `
+    ${input.value}
+    <button onclick="this.parentElement.remove()">
+      Delete
+    </button>
+  `;
 
   list.appendChild(li);
 
